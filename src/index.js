@@ -8,6 +8,9 @@ module.exports = function toReadable (number) {
          const tw = ['twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
          
         let res = '';
+
+
+   let s = number.toString();
       
         
          if (number < 10){ 
