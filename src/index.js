@@ -10,15 +10,15 @@ module.exports = function toReadable (number) {
         let res = '';
 
 
-   let s = number.toString();
+  // let s = number.toString();
       
         
          if (number < 10){ 
-         res = dg[s];
+         res = dg[number];
            }
       
       else if (number<20) {
-          res = tn[s-10];
+          res = tn[number-10];
                }
       
       else if (number<100) {
