@@ -15,16 +15,19 @@ module.exports = function toReadable (number) {
         
          if (number < 10){ 
          res = dg[number];
+              return res;
            }
       
       else if (number<20) {
           res = tn[number-10];
+           return res;
                }
       
       else if (number<100) {
           w = Math.floor(number/10);
           n = number % 10;
           res = tw[w-2]+" "+dg[n];
+           return res;
              }
       
       else (number<1000)
@@ -33,9 +36,10 @@ module.exports = function toReadable (number) {
           n = number % 10;
           d = (number- w*100 - n)/10;
                    res = dg[w]+" " + th[0]+" "+ tw[d-2]+" " +dg[n];
+           return res;
         
       }
       
-         return res;
+        
           
 }
